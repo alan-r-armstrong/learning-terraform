@@ -135,5 +135,5 @@ module "blog_autoscaling" {
     blog-alb = {
       traffic_source_identifier = aws_lb_target_group.blog.arn
     }
-  ]
+  }
 }
