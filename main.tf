@@ -110,7 +110,7 @@ security_groups = [module.blog_sg.security_group_id]
       port     = 80
       protocol = "HTTP"
       forward = {
-        target_group_arn = aws_lb_target_group.blog,arn
+        target_group_arn = aws_lb_target_group.blog.arn
       }
     }
   }
